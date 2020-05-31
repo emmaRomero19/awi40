@@ -16,8 +16,10 @@ class Cookies:
         visit = int(cookie.get("Visit"))
         visit += 1
         web.setcookie("Visit", str(visit),expires = "",  domain = None)
+        
       else:
         web.setcookie("Visit", str(1), expires = "", domain = None)
+        visit= "1"
       
       #cookies name
       if name:
